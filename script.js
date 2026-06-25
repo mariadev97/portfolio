@@ -57,19 +57,31 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    const datos = new FormData(formulario);
+    const datos = {
+      nombre: formulario.querySelector('input[name="nombre"]').value,
+      email: inputEmail.value,
+      mensaje: formulario.querySelector('textarea[name="mensaje"]').value
+    };
 
     try {
       const respuesta = await fetch('https://formspree.io/f/xbdvgqen', {
         method: 'POST',
-        body: datos,
-        headers: { 'Accept': 'application/json' }
+        body: JSON.stringify(datos),
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        }
       });
 
       if (respuesta.ok) {
+        const mensajeExito = document.getElementById('mensaje-exito');
+        const cerrarExito = document.getElementById('cerrar-exito');
         formulario.reset();
         inputEmail.style.borderColor = '';
-        alert('¡Mensaje enviado correctamente! Me pondré en contacto contigo pronto.');
+        mensajeExito.classList.add('visible');
+        cerrarExito.addEventListener('click', () => {
+          mensajeExito.classList.remove('visible');
+        });
       } else {
         alert('Hubo un error al enviar. Por favor inténtalo de nuevo.');
       }
