@@ -57,10 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // Aquí irá el envío real cuando conectemos Formspree
-    alert('¡Mensaje enviado correctamente!');
-    formulario.reset();
-    inputEmail.style.borderColor = '';
+    formulario.submit();
   });
 
 });
