@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  formulario.addEventListener('submit', (e) => {
+  formulario.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     if (!validarEmail(inputEmail.value)) {
@@ -57,7 +57,25 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    formulario.submit();
+    const datos = new FormData(formulario);
+
+    try {
+      const respuesta = await fetch('https://formspree.io/f/xbdvgqen', {
+        method: 'POST',
+        body: datos,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (respuesta.ok) {
+        formulario.reset();
+        inputEmail.style.borderColor = '';
+        alert('¡Mensaje enviado correctamente! Me pondré en contacto contigo pronto.');
+      } else {
+        alert('Hubo un error al enviar. Por favor inténtalo de nuevo.');
+      }
+    } catch (error) {
+      alert('Hubo un error al enviar. Por favor inténtalo de nuevo.');
+    }
   });
 
 });
