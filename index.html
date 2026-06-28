@@ -1,183 +1,308 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>María Álvarez González | Desarrolladora de Software</title>
-    <link rel="stylesheet" href="style.css">
+    <title>María Álvarez González | Software Developer</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- CABECERA -->
-    <header>
-        <h1>María Álvarez González</h1>
-        <p class="subtitulo">Desarrolladora de Software</p>
-        <nav>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#formacion">Formación</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
-
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi">
-        <h2>Sobre mí</h2>
-        <p>Desarrolladora de software junior con base en Desarrollo de Aplicaciones Web y experiencia en frontend, bases
-            de datos y backend (React, TypeScript, MongoDB, Java), ampliada con formación intensiva en tecnologías
-            mainframe (COBOL, JCL y DB2 con SQL embebido). Interesada en iniciar mi carrera en el sector IT aportando
-            capacidad analítica, atención al detalle y ganas de seguir aprendiendo.</p>
-    </section>
-
-    <!-- FORMACIÓN -->
-    <section id="formacion">
-        <h2>Formación</h2>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-header-izq">
-                    <h3>Programa Mainframe COBOL/JCL/DB2</h3>
-                    <span class="fecha">Abril - Junio 2026</span>
-                    <p class="empresa">Luca Soluciones TIC</p>
-                </div>
-                <span class="icono-acord">&#8964;</span>
-            </div>
-            <div class="item-cuerpo">
-                <p>Formación intensiva: COBOL batch, COBOL/DB2 (SQL embebido), JCL, z/OS y GitHub Copilot aplicado a
-                    COBOL.</p>
-            </div>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="yo.jpg" alt="María Álvarez" class="nav-foto">
+            <span class="nav-nombre">María Álvarez</span>
         </div>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-header-izq">
-                    <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
-                    <span class="fecha">2026</span>
-                    <p class="empresa">IES Doctor Fleming (Oviedo)</p>
-                </div>
-                <span class="icono-acord">&#8964;</span>
-            </div>
-            <div class="item-cuerpo">
-                <p>Formación en desarrollo web frontend y backend, con énfasis en tecnologías modernas.</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-header-izq">
-                    <h3>Iniciación al Desarrollo con Inteligencia Artificial</h3>
-                    <span class="fecha">Marzo 2026</span>
-                    <p class="empresa">Big School Formación</p>
-                </div>
-                <span class="icono-acord">&#8964;</span>
-            </div>
-            <div class="item-cuerpo">
-                <p>Introducción a los conceptos y aplicaciones de la inteligencia artificial en el desarrollo de
-                    software.</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-header-izq">
-                    <h3>Grado en Comercio y Marketing</h3>
-                    <span class="fecha">2021</span>
-                    <p class="empresa">Universidad de Oviedo</p>
-                </div>
-                <span class="icono-acord">&#8964;</span>
-            </div>
-            <div class="item-cuerpo">
-                <p>Formación en estrategias de marketing y gestión comercial.</p>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- EXPERIENCIA -->
-    <section id="experiencia">
-        <h2>Experiencia</h2>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-header-izq">
-                    <h3>Desarrolladora Web</h3>
-                    <span class="fecha">Enero - Junio 2026</span>
-                    <p class="empresa">Zaitec Innova S.L.</p>
-                </div>
-                <span class="icono-acord">&#8964;</span>
-            </div>
-            <div class="item-cuerpo">
-                <p>Proyecto: Sistema interno para gestión de datos en un entorno sanitario. Rol: Base de Datos /
-                    Frontend.</p>
-                <ul>
-                    <li>Diseño y estructuración de base de datos en MongoDB.</li>
-                    <li>Creación de scripts iniciales de base de datos.</li>
-                    <li>Desarrollo frontend con React de una funcionalidad completa.</li>
-                    <li>Apoyo en lógica backend e integración de APIs REST.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-header">
-                <div class="item-header-izq">
-                    <h3>Administrativa</h3>
-                    <span class="fecha">2022 - 2025</span>
-                    <p class="empresa">Gesterluz (asesoría energética)</p>
-                </div>
-                <span class="icono-acord">&#8964;</span>
-            </div>
-            <div class="item-cuerpo">
-                <ul>
-                    <li>Gestión y mantenimiento de bases de datos de clientes.</li>
-                    <li>Tramitación y seguimiento de procesos administrativos.</li>
-                    <li>Resolución de incidencias y atención al cliente.</li>
-                    <li>Optimización de procesos internos.</li>
-                </ul>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- HABILIDADES -->
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul class="habilidades-lista">
-            <li>HTML, CSS, JavaScript, jQuery</li>
-            <li>React, TypeScript</li>
-            <li>Java, Springboot, Python, PHP, AJAX</li>
-            <li>COBOL, JCL, DB2, SQL embebido, VSAM, z/OS</li>
-            <li>MongoDB, JSON, SQL</li>
-            <li>GitHub, Git, GitHub Copilot</li>
-            <li>Salesforce CRM, Office 365</li>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
+        <div class="nav-acciones">
+            <a href="https://www.linkedin.com/in/maria-alvarez-gonzalez" target="_blank" class="nav-linkedin">LinkedIn
+                ↗</a>
+            <a href="#contact" class="nav-cta">Contact</a>
+        </div>
+        <button class="nav-hamburger" aria-label="Abrir menú">&#9776;</button>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <canvas id="particles"></canvas>
+        <p class="hero-eyebrow">Software Developer</p>
+        <h1 class="hero-titulo">Developer with an <em>analytical</em> soul</h1>
+        <p class="hero-sub">Based in Asturias · Available to relocate to Madrid</p>
+        <div class="hero-botones">
+            <a href="#experience" class="btn btn-blanco">View experience</a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+        </div>
     </section>
 
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2>Contacto</h2>
+    <!-- ABOUT -->
+    <section class="seccion" id="about">
+        <p class="seccion-eyebrow">About me</p>
+        <h2 class="seccion-titulo">Who I am</h2>
+        <p class="seccion-texto">Junior software developer with a background in Web Application Development and hands-on
+            experience in frontend, databases and backend — React, TypeScript, MongoDB, Java — expanded with intensive
+            training in mainframe technologies: COBOL, JCL and DB2 with embedded SQL. I bring analytical thinking,
+            attention to detail and a genuine drive to keep learning.</p>
+        <p class="seccion-texto" style="margin-top: 1.2rem;">I also hold a degree in Commerce and Marketing,
+            complemented by real-world experience in digital marketing and social media management — gained during my
+            time at Gesterluz, where I handled the company's social channels and blog alongside my administrative role.
+            This background gives me a broader perspective on how technology and communication work together.</p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="seccion" id="experience">
+        <p class="seccion-eyebrow">Work</p>
+        <h2 class="seccion-titulo">Experience</h2>
+        <div class="acordeon">
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header-izq">
+                        <h3>Web Developer</h3>
+                        <span class="fecha">Jan – Jun 2026</span>
+                        <p class="empresa">Zaitec Innova S.L.</p>
+                    </div>
+                    <span class="icono-acord">&#8964;</span>
+                </div>
+                <div class="item-cuerpo">
+                    <p>Internal system for data management in a healthcare environment. Role: Database / Frontend.</p>
+                    <ul>
+                        <li>Database design and structuring in MongoDB, including schema definition and data dictionary.
+                        </li>
+                        <li>Creation of initial database scripts ensuring data integrity and consistency.</li>
+                        <li>Frontend development with React of a complete application feature, integrated with a
+                            hexagonal architecture backend.</li>
+                        <li>Support in backend logic and REST API integration between frontend, backend and database.
+                        </li>
+                    </ul>
+                    <p class="reflexion">"This experience gave me my first real taste of working in a professional dev
+                        team — agile methodology, code reviews, and the challenge of building something that actually
+                        matters in a healthcare context."</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header-izq">
+                        <h3>Administrative</h3>
+                        <span class="fecha">2022 – 2025</span>
+                        <p class="empresa">Gesterluz</p>
+                    </div>
+                    <span class="icono-acord">&#8964;</span>
+                </div>
+                <div class="item-cuerpo">
+                    <ul>
+                        <li>Client database management and maintenance.</li>
+                        <li>Administrative process handling and follow-up.</li>
+                        <li>Incident resolution and customer service.</li>
+                        <li>Internal process optimisation.</li>
+                    </ul>
+                    <p class="reflexion">"Three years of managing data, people and pressure taught me precision and
+                        composure — skills I now apply every day as a developer."</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="seccion" id="education">
+        <p class="seccion-eyebrow">Formation</p>
+        <h2 class="seccion-titulo">Education</h2>
+        <div class="acordeon">
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header-izq">
+                        <h3>Mainframe Programme COBOL/JCL/DB2</h3>
+                        <span class="fecha">Apr – Jun 2026</span>
+                        <p class="empresa">Luca Soluciones TIC</p>
+                    </div>
+                    <span class="icono-acord">&#8964;</span>
+                </div>
+                <div class="item-cuerpo">
+                    <p>Intensive training: COBOL batch, COBOL/DB2 (embedded SQL), JCL, z/OS and GitHub Copilot applied
+                        to COBOL.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header-izq">
+                        <h3>Higher Technician in Web Application Development</h3>
+                        <span class="fecha">2026</span>
+                        <p class="empresa">IES Doctor Fleming, Oviedo</p>
+                    </div>
+                    <span class="icono-acord">&#8964;</span>
+                </div>
+                <div class="item-cuerpo">
+                    <p>Vocational training covering frontend, backend, databases and software development methodologies.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header-izq">
+                        <h3>Introduction to AI Development</h3>
+                        <span class="fecha">Mar 2026</span>
+                        <p class="empresa">Big School Formación</p>
+                    </div>
+                    <span class="icono-acord">&#8964;</span>
+                </div>
+                <div class="item-cuerpo">
+                    <p>Certified course on AI-assisted development tools and workflows.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-header-izq">
+                        <h3>Degree in Commerce and Marketing</h3>
+                        <span class="fecha">2021</span>
+                        <p class="empresa">Universidad de Oviedo</p>
+                    </div>
+                    <span class="icono-acord">&#8964;</span>
+                </div>
+                <div class="item-cuerpo">
+                    <p>University degree providing a strong foundation in analytics, communication and business
+                        strategy.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="seccion" id="skills">
+        <p class="seccion-eyebrow">Stack</p>
+        <h2 class="seccion-titulo">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-grupo">
+                <p class="skill-categoria">Frontend</p>
+                <div class="pills">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>TypeScript</span><span>jQuery</span>
+                </div>
+            </div>
+            <div class="skill-grupo">
+                <p class="skill-categoria">Backend</p>
+                <div class="pills">
+                    <span>Java</span><span>Springboot</span><span>Python</span><span>PHP</span><span>AJAX</span>
+                </div>
+            </div>
+            <div class="skill-grupo">
+                <p class="skill-categoria">Database</p>
+                <div class="pills">
+                    <span>MongoDB</span><span>SQL</span><span>DB2</span><span>JSON</span><span>VSAM</span>
+                </div>
+            </div>
+            <div class="skill-grupo">
+                <p class="skill-categoria">Mainframe</p>
+                <div class="pills">
+                    <span>COBOL</span><span>JCL</span><span>z/OS</span><span>TSO/ISPF</span><span>SPUFI</span>
+                </div>
+            </div>
+            <div class="skill-grupo">
+                <p class="skill-categoria">Tools</p>
+                <div class="pills">
+                    <span>Git</span><span>GitHub</span><span>GitHub
+                        Copilot</span><span>JIRA</span><span>Postman</span><span>Maven</span>
+                </div>
+            </div>
+            <div class="skill-grupo">
+                <p class="skill-categoria">Other</p>
+                <div class="pills">
+                    <span>Salesforce CRM</span><span>Office 365</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="seccion" id="projects">
+        <p class="seccion-eyebrow">Work</p>
+        <h2 class="seccion-titulo">Projects</h2>
+        <div class="carrusel-wrapper">
+            <button class="carrusel-btn carrusel-prev">&#8592;</button>
+            <div class="carrusel">
+
+                <div class="proyecto-card" data-proyecto="healthcare">
+                    <div class="proyecto-info">
+                        <p class="proyecto-categoria">Healthcare · 2026</p>
+                        <h3>Healthcare Data Management System</h3>
+                        <div class="proyecto-botones">
+                            <span class="btn-proyecto btn-proyecto-disabled">View details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="proyecto-card" data-proyecto="portfolio">
+                    <div class="proyecto-info">
+                        <p class="proyecto-categoria">Portfolio · 2026</p>
+                        <h3>Personal Portfolio Website</h3>
+                        <div class="proyecto-botones">
+                            <span class="btn-proyecto btn-proyecto-disabled">View details</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Añade más proyectos aquí -->
+
+            </div>
+            <button class="carrusel-btn carrusel-next">&#8594;</button>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="seccion" id="contact">
+        <p class="seccion-eyebrow">Get in touch</p>
+        <h2 class="seccion-titulo">Contact</h2>
         <form id="formulario-contacto" action="https://formspree.io/f/xbdvgqen" method="POST">
-            <input type="text" name="nombre" placeholder="Tu nombre" required>
-            <input type="email" name="email" placeholder="Tu email" required>
-            <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-            <button type="submit">Enviar mensaje</button>
+            <input type="text" name="nombre" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="mensaje" placeholder="Your message" rows="5" required></textarea>
+            <button type="submit">Send message</button>
         </form>
         <div class="mensaje-exito" id="mensaje-exito">
-            ✓ ¡Mensaje enviado correctamente! Me pondré en contacto contigo pronto 😊
-            <button id="cerrar-exito">Aceptar</button>
+            ✓ Message sent successfully! I'll get back to you soon 😊
+            <button id="cerrar-exito">OK</button>
         </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2026 María Álvarez González</p>
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- MODAL PROYECTO -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-cerrar" id="modal-cerrar">&#10005;</button>
+            <div class="modal-imagen-placeholder" id="modal-imagen-placeholder">No image available</div>
+            <img class="modal-imagen" id="modal-imagen" src="" alt="" style="display:none;">
+            <div class="modal-contenido">
+                <p class="modal-categoria" id="modal-categoria"></p>
+                <h2 id="modal-titulo"></h2>
+                <p class="modal-descripcion" id="modal-descripcion"></p>
+                <div class="pills" id="modal-pills"></div>
+                <div class="modal-botones" id="modal-botones"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
