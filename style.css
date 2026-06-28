@@ -125,16 +125,22 @@ body {
 }
 
 .nav-linkedin {
-  text-decoration: none;
-  font-size: 0.85rem;
-  font-weight: 500;
   color: var(--gris);
-  border: 1px solid var(--negro-borde);
-  padding: 0.45rem 1.2rem;
-  border-radius: 20px;
-  transition: all 0.2s ease;
-  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
 }
+
+.nav-linkedin:hover { color: var(--rosa); }
+
+.btn-linkedin-icon {
+  color: var(--gris);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.btn-linkedin-icon:hover { color: var(--rosa); }
 
 .nav-acciones {
   display: flex;
@@ -142,10 +148,6 @@ body {
   gap: 0.6rem;
 }
 
-.nav-linkedin:hover {
-  border-color: var(--rosa);
-  color: var(--rosa);
-}
 
 .nav-hamburger {
   display: none;
@@ -503,9 +505,6 @@ body {
   color: var(--rosa);
 }
 
-@media (max-width: 768px) {
-  .proyecto-card { min-width: calc(100% - 0rem); }
-}
 
 /* ── CONTACTO ── */
 #formulario-contacto {
@@ -695,6 +694,16 @@ body {
   flex-wrap: wrap;
 }
 
+/* ── CONTACT LINKEDIN ── */
+.contact-linkedin {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--gris);
+  font-size: 0.88rem;
+}
+
 /* ── FOOTER ── */
 footer {
   text-align: center;
@@ -708,6 +717,7 @@ footer {
 @media (max-width: 768px) {
   .nav-links { display: none; }
   .nav-hamburger { display: block; }
+  .nav-linkedin { display: none; }
   .nav-links.abierto {
     display: flex;
     flex-direction: column;
@@ -722,8 +732,8 @@ footer {
   }
   .hero { padding: 7rem 1.5rem 3rem; }
   .seccion { padding: 4rem 1.5rem; }
-  .hobbies-grid { grid-template-columns: 1fr 1fr; }
   .skills-grid { grid-template-columns: 1fr; }
+  .proyecto-card { min-width: 100%; }
 }
 
 @media (max-width: 480px) {
