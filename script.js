@@ -135,6 +135,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── MODAL PROYECTOS ──
   const proyectos = {
+    devfirst: {
+      categoria: 'Web App · 2026',
+      titulo: 'DevFirst — Job Platform for Junior IT Profiles',
+      descripcion: 'A job-matching platform connecting tech companies with recently graduated developers looking for their first opportunity. Built as my final degree project (CFGS DAW), it tackles a real problem in the Spanish IT job market: junior profiles being filtered out of generalist platforms due to lack of experience. I designed the full business plan and built the frontend with React, Vite and Tailwind, defining the data model and component architecture from scratch. Backend (Node.js, Express, MongoDB) currently in development.',
+      stack: ['React', 'Vite', 'Tailwind CSS', 'React Router', 'Node.js (in progress)', 'MongoDB (in progress)'],
+      imagen: null,
+      botones: [
+        { texto: 'GitHub ↗', url: 'https://github.com/mariadev97/devfirst-frontend', clase: 'btn-proyecto-gh' }
+      ]
+    },
+
     healthcare: {
       categoria: 'Healthcare · 2026',
       titulo: 'Healthcare Data Management System',
